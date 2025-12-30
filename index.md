@@ -37,5 +37,6 @@ I’m an Electrical Engineering B.S. candidate at UCLA (expected June 2026) work
 ## Links
 - [Projects](/projects)
 - [CV](/cv)
+- Email: owang22@ucla.edu
 - GitHub: https://github.com/owang22
-- Email: owang22@ucla.edu :contentReference[oaicite:13]{index=13}
+
