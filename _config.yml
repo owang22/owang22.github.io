@@ -1,0 +1,31 @@
+title: "Oliver Wang"
+description: "EE at UCLA. Time series, reliability, forecasting, DSP."
+url: "https://YOUR_USERNAME.github.io"
+baseurl: ""
+
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+
+# Just the Docs settings
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+permalink: pretty
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Top right links
+aux_links:
+  "GitHub":
+    - "https://github.com/owang22"
+  "CV (PDF)":
+    - "/assets/files/cv.pdf"
+  "Email":
+    - "mailto:owang235@gmail.com"
+aux_links_new_tab: true
+
+# Footer
+footer_content: "© 2025 Oliver Wang. Built with GitHub Pages."
