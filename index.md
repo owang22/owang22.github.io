@@ -9,7 +9,7 @@ layout: default
 {% if profile %}
 <div class="profile">
   <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Photo of Oliver Wang">
-  <div class="profile-caption">NESL, UCLA</div>
+  <div class="profile-caption"></div>
 </div>
 {% endif %}
 <h1 class="about-title"><strong>{{ site.first_name }}</strong> {{ site.last_name }}</h1>
