@@ -6,7 +6,7 @@ subtitle: "Things I do outside the lab."
 
 ## Music
 
-I play clarinet in the UCLA Solid Gold Sound marching band, and have played every home football game since 2022.
+I played clarinet in the UCLA marching band for four years! Go Bruins!
 
 {% include gallery.html section="music" %}
 
