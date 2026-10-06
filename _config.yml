@@ -1,31 +1,31 @@
 title: "Oliver Wang"
-description: "EE at UCLA. Time series, reliability, forecasting, DSP."
+first_name: "Oliver"
+last_name: "Wang"
+description: "M.S. student in Electrical Engineering at UCLA. Reliable prediction for forecasting models and robots in changing environments."
 url: "https://owang22.github.io"
 baseurl: ""
-
-remote_theme: just-the-docs/just-the-docs
-
-plugins:
-  - jekyll-remote-theme
-
-# Just the Docs settings
-color_scheme: light
-search_enabled: true
-heading_anchors: true
 permalink: pretty
 
-back_to_top: true
-back_to_top_text: "Back to top"
+# Contact and profile links. Leave a value empty to hide its icon.
+email: "owang22@ucla.edu"
+github: "owang22"
+scholar: ""        # Google Scholar user id, e.g. "AbCdEfGhIjK"
+linkedin: ""       # LinkedIn handle, e.g. "oliver-wang"
 
-# Top right links
-aux_links:
-  "GitHub":
-    - "https://github.com/owang22"
-  "CV (PDF)":
-    - "/assets/files/cv.pdf"
-  "Email":
-    - "mailto:owang22@ucla.edu"
-aux_links_new_tab: true
+nav:
+  - title: "about"
+    url: "/"
+  - title: "publications"
+    url: "/publications/"
+  - title: "projects"
+    url: "/projects/"
+  - title: "personal"
+    url: "/personal/"
+  - title: "cv"
+    url: "/cv/"
 
-# Footer
-footer_content: "© 2025 Oliver Wang. Built with GitHub Pages."
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

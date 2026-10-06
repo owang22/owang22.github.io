@@ -1,17 +1,28 @@
-# Personal site
+# owang22.github.io
 
-Source for my GitHub Pages site: https://owang22.github.io
+Personal site, built by GitHub Pages with Jekyll. No theme or plugins: the layout lives in `_layouts/` and `_includes/`, styles in `assets/css/main.css`.
 
-## Edit content
-Main pages:
-- Home: `index.md`
-- Projects: `projects.md`
-- CV: `cv.md`
-- About: `about.md`
+## Where things live
 
-Assets:
-- CV PDF: `assets/files/cv.pdf`
-- Images: `assets/img/`
+| Change | File |
+|---|---|
+| Bio, interests | `index.md` |
+| News on the home page | `_data/news.yml` |
+| Publications (`selected: true` puts one on the home page) | `_data/publications.yml` |
+| Project cards | `_data/projects.yml` (optional images go in `assets/img/projects/`) |
+| Personal page text | `personal.md` |
+| Personal page photos | `_data/photos.yml` + images in `assets/img/personal/` |
+| Profile photo | `assets/img/profile.jpg` (shows up automatically once the file exists) |
+| CV | `assets/files/cv.pdf` |
+| Email, GitHub, Scholar, LinkedIn icons | `_config.yml` |
+
+## Preview locally
+
+```
+gem install jekyll -v 3.10.0
+jekyll serve
+```
 
 ## Deploy
-Push to `main`. In GitHub repo settings, enable Pages for `main` and `/ (root)`.
+
+Push to `main`. Pages settings: deploy from branch `main`, folder `/ (root)`.

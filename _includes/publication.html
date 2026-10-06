@@ -1,0 +1,15 @@
+{% assign me = "O. Wang" %}
+<li class="pub">
+  <div class="pub-badge">{{ include.pub.badge }}</div>
+  <div class="pub-body">
+    <div class="pub-title">{{ include.pub.title }}</div>
+    <div class="pub-authors">{{ include.pub.authors | replace: me, "<strong>O. Wang</strong>" }}</div>
+    <div class="pub-venue"><em>{{ include.pub.venue }}</em>{% if include.pub.note %} <span class="pub-note">{{ include.pub.note }}</span>{% endif %}</div>
+    {% if include.pub.summary %}<p class="pub-summary">{{ include.pub.summary }}</p>{% endif %}
+    {% if include.pub.links %}
+    <div class="pub-links">
+      {% for link in include.pub.links %}<a class="btn" href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</li>

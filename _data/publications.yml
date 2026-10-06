@@ -1,0 +1,53 @@
+# Newest first. "selected: true" shows the paper on the home page.
+
+- title: "How Should a Home Robot Update Its Memories When Human Routines Change?"
+  authors: "O. Wang, M. Srivastava"
+  venue: "CoRL 2026 Workshop on Memory for Robot Foundation Models"
+  note: "under review"
+  year: 2026
+  badge: "CoRL-W"
+  selected: true
+  summary: "Summary-only LLM memories lose to a simple last-seen rule when people move things. Keeping raw sightings closes the gap."
+
+- title: "Spectral Predictability as a Fast Reliability Indicator for Time Series Forecasting Model Selection"
+  authors: "O. Wang, P. Quan, K. Yang, M. Srivastava"
+  venue: "AAAI 2026 Workshop on AI for Time Series (AI4TS)"
+  note: "oral"
+  year: 2026
+  badge: "AAAI-W"
+  selected: true
+  summary: "A score computed in seconds tells you whether a forecasting foundation model will beat a small, cheap model on your data."
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2511.08884"
+    - label: "code"
+      url: "https://github.com/nesl/Spectral-Predictability-TS"
+
+- title: "Robots Reading Recipes: Large Language Models as Translators Between Humans and Machines"
+  authors: "O. Wang, G. Cheng, L. Caspar, A. Yokota, M. Khosravy, O. Witkowski"
+  venue: "Artificial Life and Robotics, 30(3), 2025"
+  year: 2025
+  badge: "AROB"
+  selected: true
+  summary: "Turning written cocktail recipes into robot commands with an off-the-shelf LLM and no fine-tuning."
+  links:
+    - label: "paper"
+      url: "https://link.springer.com/article/10.1007/s10015-025-01031-3"
+
+- title: "An Insertable Glucose Sensor Using a Compact and Cost-Effective Phosphorescence Lifetime Imager and Machine Learning"
+  authors: "A. Goncharov, ..., O. Wang, ..., A. Ozcan"
+  venue: "ACS Nano, 18(34), 2024"
+  year: 2024
+  badge: "ACS Nano"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2406.09442"
+
+- title: "LSOP: Layer-Scaled One-shot Pruning"
+  authors: "O. Wang, C. Dovrolis, J. Lee"
+  venue: "Journal of Student Research, 11(1), 2022"
+  year: 2022
+  badge: "JSR"
+  links:
+    - label: "paper"
+      url: "https://www.jsr.org/hs/index.php/path/article/view/2587"

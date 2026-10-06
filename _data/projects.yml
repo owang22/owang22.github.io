@@ -1,0 +1,82 @@
+# group: which section of the projects page the card goes in.
+# image: optional, file name in assets/img/projects/
+
+- group: "Current research"
+  title: "Finding events in cameras, sensors, and text"
+  period: "Sep 2026 – now · with Sandia National Labs"
+  question: "Can a language model pipeline decide what counts as an event, then find it across very different data?"
+  summary: "I lead this project. The pipeline defines event types, forms hypotheses, and checks them against camera feeds, wind sensors, news, and social media. Wildfires and traffic accidents are the first targets."
+
+- group: "Current research"
+  title: "Home robot memory when routines change"
+  period: "2026 · under review, CoRL 2026 workshop"
+  question: "When people start keeping things in new places, how should a home robot update what it remembers?"
+  summary: "I built an object-search benchmark for a household where routines change without warning. Memories that keep only LLM-written summaries do worse than a plain \"look where you last saw it\" rule. Keeping the raw sightings closes that gap and halves the drop when the same change happens again."
+
+- group: "Current research"
+  title: "Confidence after a routine shift"
+  period: "2026 · under review, CoRL 2026 workshop"
+  question: "After someone's routine shifts, does a predictor's confidence still tell you when it is wrong?"
+  summary: "Timetable-style predictors stay confident after a shift even as their errors grow. A survival model's uncertainty keeps tracking its errors."
+
+- group: "Current research"
+  title: "Human feedback for a time-series benchmark"
+  period: "NESL"
+  question: "How do you check that a synthetic dataset teaches a time-series model the right things?"
+  summary: "I built a review pipeline where 10 annotators went through 1,000 questions, and used their feedback to fix a synthetic dataset of 10,000+ samples for training a general-purpose time-series foundation model."
+
+- group: "Current research"
+  title: "Spectral predictability"
+  period: "NESL · AAAI 2026 AI4TS workshop, oral"
+  question: "Before running a large forecasting model, can you tell whether it will beat a small one?"
+  summary: "A spectral predictability score takes seconds to compute. Across 51 models and 28 datasets, foundation models had 20–60% lower error than lightweight forecasters on data the score rated as predictable."
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2511.08884"
+    - label: "code"
+      url: "https://github.com/nesl/Spectral-Predictability-TS"
+
+- group: "Earlier research"
+  title: "Robots reading recipes"
+  period: "Summer 2023 · Cross Labs, Kyoto"
+  question: "Can an off-the-shelf language model turn a written recipe into code a robot can run?"
+  summary: "Working with cocktail recipes and no fine-tuning, I combined line-by-line prompting, ensemble voting, and verb parsing to reach 0.75 accuracy. I also wrote feasibility reports for industry clients."
+  links:
+    - label: "paper"
+      url: "https://link.springer.com/article/10.1007/s10015-025-01031-3"
+
+- group: "Earlier research"
+  title: "Insertable glucose sensor"
+  period: "2023 – 2024 · Ozcan Research Group, UCLA"
+  question: "Can a cheap, compact imager read glucose levels from a sensor under the skin?"
+  summary: "I calibrated the phosphorescence lifetime imager and built segmentation and neural network models to cut down variability between readings."
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2406.09442"
+
+- group: "Earlier research"
+  title: "Layer-scaled one-shot pruning"
+  period: "2022 · high school"
+  question: "How much of a neural network can you remove in one pass?"
+  summary: "My first research paper, on a one-shot pruning method for making neural networks smaller."
+  links:
+    - label: "paper"
+      url: "https://www.jsr.org/hs/index.php/path/article/view/2587"
+
+- group: "Things I built"
+  title: "FPGA audio visualizer"
+  period: "2024 – 2025 · UCLA IEEE, ML lead"
+  question: "Can an instrument classifier run in real time on a small FPGA?"
+  summary: "I led the team that built a real-time audio visualizer, and trained a 12-class instrument classifier (above 70% accuracy) that we deployed on a Xilinx FPGA."
+
+- group: "Things I built"
+  title: "Micromouse"
+  period: "2022 – 2023 · UCLA IEEE · 5th place, All America Micromouse"
+  question: "Can a small robot we designed ourselves map and solve a maze on its own?"
+  summary: "We designed the PCB and IR sensors and wrote the flood-fill solver and firmware."
+
+- group: "Things I built"
+  title: "Arduino instrument"
+  period: "Side project"
+  question: "Can a musical keyboard teach how binary encoding works?"
+  summary: "A keyboard-style Arduino instrument built to teach binary encoding schemes."

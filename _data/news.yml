@@ -1,0 +1,14 @@
+# Newest first. "text" accepts Markdown.
+
+- date: "Sep 2026"
+  text: "Started my M.S. in EE at UCLA, staying in NESL. Now leading a project with Sandia National Labs on detecting wildfires and accidents from cameras, sensors, and text."
+- date: "2026"
+  text: "Two workshop papers under review at CoRL 2026: how a home robot should update its memory when routines change, and whether predictors' confidence still means anything after they do."
+- date: "Summer 2026"
+  text: "Volunteer TA at UCLA COSMOS, teaching high schoolers computer vision, speech, and AI."
+- date: "Jun 2026"
+  text: "Finished my B.S. in Electrical Engineering at UCLA."
+- date: "2026"
+  text: "Received the NSF Graduate Research Fellowship."
+- date: "Jan 2026"
+  text: "Gave an oral presentation of [Spectral Predictability](https://arxiv.org/abs/2511.08884) at the AAAI 2026 AI4TS workshop."

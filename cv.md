@@ -1,9 +1,10 @@
 ---
-title: "CV"
+title: "cv"
 layout: default
-nav_order: 3
 ---
 
-## CV
+<p><a class="btn" href="{{ '/assets/files/cv.pdf' | relative_url }}">Download PDF</a></p>
 
-Download: [cv.pdf](/assets/files/cv.pdf)
+<object class="cv-frame" data="{{ '/assets/files/cv.pdf' | relative_url }}" type="application/pdf">
+  <p>Your browser can't show the PDF here. <a href="{{ '/assets/files/cv.pdf' | relative_url }}">Download it instead.</a></p>
+</object>

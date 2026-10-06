@@ -1,46 +1,29 @@
 ---
-title: "Projects"
+title: "projects"
 layout: default
-nav_order: 2
+subtitle: "What I've worked on, and the question behind each one."
 ---
 
-# Projects
+{% assign groups = site.data.projects | group_by: "group" %}
+{% for group in groups %}
+## {{ group.name }}
 
-A selection of research and engineering projects. Most are accompanied by code, writeups, or demos.
-
-## Time series and forecasting
-
-### Spectral Predictability for Model Selection (AAAI AI4TS 2026 Workshop)
-**What:** Research result connecting spectral predictability to time series model performance, positioned as a fast reliability indicator for model selection.  
-**Status:** Accepted to AAAI AI4TS 2026 Workshop; preprint available. 
-**Links:** Paper: https://arxiv.org/abs/2511.08884 · Code: https://github.com/nesl/Spectral-Predictability-TS/
-
-## Embedded ML and hardware facing systems
-
-### Edge AI Sensor System (Digital Audio Visualizer)
-**Role:** Machine Learning Lead, UCLA IEEE project team. 
-**What:** Real time audio processing and visualization plus an instrument classifier over 12 classes, then deployed to Xilinx FPGA hardware. 
-**Results:** >70% classification accuracy in Python prior to FPGA deployment. 
-**Tech:** Python, spectral features, FPGA deployment workflow. 
-
-### Autonomous Micromouse Robot
-**Role:** Team Member, UCLA IEEE Micromouse project. 
-**What:** Autonomous maze solver with custom PCB and IR sensors plus embedded flood fill style planning and firmware. 
-
-## Robotics and applied ML
-
-### Robots Reading Recipes (LLM to robot translation)
-**Role:** Research Intern, Cross Labs (Kyoto, Japan). 
-**What:** LLM based translator for human robot collaboration; delivered feasibility reports and presented results. 
-**Publication:** Artificial Life and Robotics (2025). 
-
-## Sensing and healthcare
-
-### Compact glucose sensing via phosphorescence lifetime imaging
-**Role:** Researcher, Ozcan Research Group. 
-**What:** Designed and calibrated compact glucose sensing systems; added segmentation and neural models to reduce variability; contributed to ACS Nano paper. 
-
-## Smaller builds
-
-### Arduino Instrument (binary encoding teaching tool)
-**What:** Keyboard style instrument used to teach binary encoding schemes. 
+<div class="projects">
+  {% for p in group.items %}
+  <article class="project">
+    {% if p.image %}<img src="{{ '/assets/img/projects/' | append: p.image | relative_url }}" alt="{{ p.title | escape }}" loading="lazy">{% endif %}
+    <div class="project-body">
+      <h3 class="project-title">{{ p.title }}</h3>
+      <div class="project-meta">{{ p.period }}</div>
+      <p class="project-question">{{ p.question }}</p>
+      <p class="project-summary">{{ p.summary }}</p>
+      {% if p.links %}
+      <div class="pub-links">
+        {% for link in p.links %}<a class="btn" href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% endfor %}

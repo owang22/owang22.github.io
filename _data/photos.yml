@@ -1,0 +1,13 @@
+# Photos for the personal page.
+# 1. Put the image in assets/img/personal/
+# 2. Add an entry below. section must be one of:
+#    music, kyoto, teaching, community, competitions
+# Sections with no photos show no gallery.
+# Delete the "[]" line once you add the first photo.
+#
+# Example:
+# - file: band-rose-bowl.jpg
+#   caption: "Pregame at the Rose Bowl, 2024"
+#   section: music
+
+[]

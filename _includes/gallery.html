@@ -1,0 +1,11 @@
+{% assign photos = site.data.photos | where: "section", include.section %}
+{% if photos.size > 0 %}
+<div class="gallery">
+  {% for photo in photos %}
+  <figure>
+    <img src="{{ '/assets/img/personal/' | append: photo.file | relative_url }}" alt="{{ photo.caption | escape }}" loading="lazy">
+    {% if photo.caption %}<figcaption>{{ photo.caption }}</figcaption>{% endif %}
+  </figure>
+  {% endfor %}
+</div>
+{% endif %}
