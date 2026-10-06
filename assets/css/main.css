@@ -9,8 +9,9 @@
   --badge-text: #ffffff;
 }
 
+/* Dark colors: follow the visitor's system setting unless they picked light with the toggle. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #1c1c1d;
     --text: #e2e2e4;
     --muted: #a0a0a6;
@@ -20,6 +21,17 @@
     --badge-bg: #2ea6cc;
     --badge-text: #111;
   }
+}
+
+:root[data-theme="dark"] {
+  --bg: #1c1c1d;
+  --text: #e2e2e4;
+  --muted: #a0a0a6;
+  --accent: #2ea6cc;
+  --border: #36363a;
+  --card: #232326;
+  --badge-bg: #2ea6cc;
+  --badge-text: #111;
 }
 
 * { box-sizing: border-box; }
@@ -72,8 +84,28 @@ h3 { font-weight: 500; font-size: 1.05rem; margin: 1.6rem 0 0.4rem; }
 .nav-links { list-style: none; display: flex; gap: 1.4rem; margin: 0; padding: 0; }
 .nav-links a { color: var(--text); font-weight: 400; }
 .nav-links a.active, .nav-links a:hover { color: var(--accent); text-decoration: none; }
+.nav-links { margin-left: auto; }
 .nav-toggle { display: none; }
 .nav-toggle-label { display: none; }
+
+.theme-toggle {
+  background: none;
+  border: none;
+  padding: 4px;
+  margin-left: 1.2rem;
+  cursor: pointer;
+  color: var(--text);
+  display: flex;
+}
+.theme-toggle:hover { color: var(--accent); }
+.theme-toggle svg { width: 20px; height: 20px; fill: currentColor; }
+.icon-sun { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .icon-sun { display: block; }
+  :root:not([data-theme="light"]) .icon-moon { display: none; }
+}
+:root[data-theme="dark"] .icon-sun { display: block; }
+:root[data-theme="dark"] .icon-moon { display: none; }
 
 @media (max-width: 640px) {
   .nav-toggle-label {
@@ -96,8 +128,12 @@ h3 { font-weight: 500; font-size: 1.05rem; margin: 1.6rem 0 0.4rem; }
   .nav-toggle-label span { top: 9px; }
   .nav-toggle-label span::before { top: -8px; }
   .nav-toggle-label span::after { top: 8px; }
+  .theme-toggle { order: 1; margin-left: auto; margin-right: 1rem; }
+  .nav-toggle-label { order: 2; }
   .nav-links {
     display: none;
+    order: 3;
+    margin-left: 0;
     flex-direction: column;
     gap: 0.4rem;
     width: 100%;
