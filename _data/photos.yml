@@ -1,7 +1,8 @@
 # Photos for the personal page.
 # 1. Put the image in assets/img/personal/
 # 2. Add an entry below. section must be one of:
-#    music, kyoto, teaching, community, competitions
+#    music, birding, kyoto, teaching, community, competitions
+# The birding section shows as a slideshow; the others show as a grid.
 # Sections with no photos show no gallery.
 # Browsers can't show .HEIC files, so use .jpg or .png.
 #
@@ -12,3 +13,24 @@
 
 - file: marchingband.jpg
   section: music
+
+- file: osprey.jpg
+  section: birding
+- file: egret.jpg
+  section: birding
+- file: twoEgrets.jpg
+  section: birding
+- file: babyRaven.jpg
+  section: birding
+- file: oystercatcher.jpg
+  section: birding
+- file: tern.jpg
+  section: birding
+- file: woodpecker.jpg
+  section: birding
+- file: leucistic.jpg
+  section: birding
+- file: hawaiiChukarPartridge.jpg
+  section: birding
+- file: gopherSnake.jpg
+  section: birding

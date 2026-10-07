@@ -10,6 +10,12 @@ I played clarinet in the UCLA marching band for four years! Go Bruins!
 
 {% include gallery.html section="music" %}
 
+## Birding
+
+I like birdwatching and taking blurry photos while on vacation, club retreats, or whenever I see cool new animals!
+
+{% include slideshow.html section="birding" caption="Here are some silly birds!" %}
+
 ## Kyoto
 
 In summer 2023 I lived in Kyoto for a research internship at Cross Labs, working on getting robots to follow written recipes.

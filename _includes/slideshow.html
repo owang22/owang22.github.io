@@ -1,0 +1,19 @@
+{% assign slides = site.data.photos | where: "section", include.section %}
+{% if slides.size > 0 %}
+<figure class="slideshow" data-slideshow>
+  <div class="slides" tabindex="0" aria-roledescription="slideshow">
+    {% for photo in slides %}
+    <div class="slide{% if forloop.first %} active{% endif %}">
+      <img src="{{ '/assets/img/personal/' | append: photo.file | relative_url }}" alt="{{ photo.caption | default: "Photo of an animal" | escape }}"{% unless forloop.first %} loading="lazy"{% endunless %}>
+      {% if photo.caption %}<div class="slide-label">{{ photo.caption }}</div>{% endif %}
+    </div>
+    {% endfor %}
+    {% if slides.size > 1 %}
+    <button class="slide-btn prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <button class="slide-btn next" type="button" aria-label="Next photo">&#8250;</button>
+    <div class="slide-count"><span class="slide-index">1</span> / {{ slides.size }}</div>
+    {% endif %}
+  </div>
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>
+{% endif %}
