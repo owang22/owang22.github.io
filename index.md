@@ -17,24 +17,16 @@ layout: default
 
 I'm a master's student at UCLA, working with Prof. Mani Srivastava in the [Networked and Embedded Systems Lab (NESL)](https://nesl.ee.ucla.edu/). I finished my B.S. in Electrical Engineering at UCLA in June 2026.
 
-My research is about one question: **when should a system trust what it has learned?** Forecasters, robots, and sensing pipelines are all built from past data, and the world they run in keeps changing. I look for cheap ways to tell when a model's predictions or memories have stopped being reliable, and for what the system should do once they have.
+I'm interested in how systems use past observations to make predictions when conditions change. My current work examines how home robots should update their memories as household routines change, and whether model confidence helps identify incorrect predictions. I also lead a project with Sandia National Laboratories on detecting urban incidents like wildfires and traffic accidents from cameras, sensors, and social media. Meanwhile, I've also enjoyed working with time-series, such as identifying whether a given time-series foundation model is suitable for a dataset.
 
 ## Interests
 
 <ul class="interests">
-  <li>Knowing when to trust a model: reliability signals for forecasting and foundation models</li>
-  <li>Memory for robots in homes where people's routines change</li>
-  <li>Uncertainty that stays honest after the data shifts</li>
-  <li>Detecting real-world events from mixed sensor and text data</li>
+  <li>Knowing when to trust a model (reliability signals for foundation models)</li>
+  <li>Trustworthy memory for robots that interact with humans</li>
+  <li>Uncertainty quantification that is robust to data shifts</li>
+  <li>Continual learning with closed-loop systems</li>
 </ul>
-
-## News
-
-<table class="news">
-  {% for item in site.data.news limit: 6 %}
-  <tr><th>{{ item.date }}</th><td>{{ item.text | markdownify | remove: "<p>" | remove: "</p>" }}</td></tr>
-  {% endfor %}
-</table>
 
 ## Selected publications
 
@@ -44,5 +36,13 @@ My research is about one question: **when should a system trust what it has lear
 </ul>
 
 <p><a href="{{ '/publications/' | relative_url }}">All publications →</a></p>
+
+## News
+
+<table class="news">
+  {% for item in site.data.news limit: 6 %}
+  <tr><th>{{ item.date }}</th><td>{{ item.text | markdownify | remove: "<p>" | remove: "</p>" }}</td></tr>
+  {% endfor %}
+</table>
 
 {% include social.html %}
