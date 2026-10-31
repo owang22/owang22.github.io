@@ -15,17 +15,17 @@ layout: default
 <h1 class="about-title"><strong>{{ site.first_name }}</strong> {{ site.last_name }}</h1>
 <p class="about-subtitle">M.S. student, Electrical Engineering, UCLA · NSF Graduate Research Fellow</p>
 
-I'm a master's student at UCLA, working with Prof. Mani Srivastava in the [Networked and Embedded Systems Lab (NESL)](https://nesl.ee.ucla.edu/). I finished my B.S. in Electrical Engineering at UCLA in June 2026.
+I'm a master's student at UCLA, working with Prof. Mani Srivastava in the [Networked and Embedded Systems Lab (NESL)](https://nesl.ee.ucla.edu/) and with Prof. Abeer Alwan in the Speech Processing and Auditory Perception Lab (SPAPL). I finished my B.S. in Electrical Engineering at UCLA in June 2026.
 
-I'm interested in how systems use past observations to make predictions when conditions change. My current work examines how home robots should update their memories as household routines change, and whether model confidence helps identify incorrect predictions. I also lead a project with Sandia National Laboratories on detecting urban incidents like wildfires and traffic accidents from cameras, sensors, and social media. Meanwhile, I've also enjoyed working with time-series, such as identifying whether a given time-series foundation model is suitable for a dataset.
+I'm interested in robots and agents that keep getting better over long-term deployment. My current work examines how home robots should update their memories as household routines change, and whether model confidence helps identify incorrect predictions. I'm now testing these ideas on a Unitree Go2 quadruped, where the real world brings failures that never showed up in simulation. I also lead the research direction of a project with Sandia National Laboratories on detecting urban events like wildfires and traffic accidents from cameras, sensors, and social media. Meanwhile, I've also enjoyed working with time-series, such as identifying whether a given time-series foundation model is suitable for a dataset.
 
 ## Interests
 
 <ul class="interests">
+  <li>Memory that revises its beliefs as environments and human routines change</li>
+  <li>Uncertainty that stays meaningful under distribution shift</li>
+  <li>Agents that diagnose and learn from their own failures</li>
   <li>Knowing when to trust a model (reliability signals for foundation models)</li>
-  <li>Trustworthy memory for robots that interact with humans</li>
-  <li>Uncertainty quantification that is robust to data shifts</li>
-  <li>Continual learning with closed-loop systems</li>
 </ul>
 
 ## Selected publications

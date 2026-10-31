@@ -2,12 +2,12 @@
 
 - title: "How Should a Home Robot Update Its Memories When Human Routines Change?"
   authors: "O. Wang, M. Srivastava"
-  venue: "CoRL 2026 Workshop on Memory for Robot Foundation Models"
-  note: "under review"
+  venue: "CoRL 2026 Workshop on Memory for Robot Foundation Models (RoboMem)"
+  note: "accepted; companion versions at the CoRL 2026 workshops on Modeling Uncertainty in Robotic World Models and on Continually Self-Improving Robots"
   year: 2026
   badge: "CoRL-W"
   selected: true
-  summary: "Summary-only LLM memories lose to a simple last-seen rule when people move things. Keeping raw sightings closes the gap."
+  summary: "LLM-written memory summaries often forget what they learned when an old routine comes back. Keeping hypotheses about routines, backed by raw observations, makes predictions hold up better under these shifts."
 
 - title: "Spectral Predictability as a Fast Reliability Indicator for Time Series Forecasting Model Selection"
   authors: "O. Wang, P. Quan, K. Yang, M. Srivastava"
