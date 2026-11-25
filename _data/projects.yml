@@ -78,7 +78,7 @@
   summary: "My first research paper, on a one-shot pruning method for making neural networks smaller."
   links:
     - label: "paper"
-      url: "https://www.jsr.org/hs/index.php/path/article/view/2587"
+      url: "https://doi.org/10.47611/jsrhs.v11i1.2587"
 
 - group: "Things I built"
   title: "FPGA audio visualizer"
