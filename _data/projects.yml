@@ -12,6 +12,11 @@
   period: "Jun 2026 – now · NESL · CoRL 2026 workshops"
   question: "When people start keeping things in new places, how should a home robot update what it remembers?"
   summary: "I built a ten-household object-search benchmark where routines change without warning. LLM-written memory summaries often fail to reuse what they learned when an earlier routine comes back. My memory-update method keeps hypotheses about the underlying routines and uses a retrieval tool to check them against raw observations, which improves predictions during these shifts, especially recurring ones."
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2611.29818"
+    - label: "code"
+      url: "https://github.com/nesl/memory-for-home-robots"
 
 - group: "Current research"
   title: "Confidence after a routine shift"

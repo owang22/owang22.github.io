@@ -1,7 +1,7 @@
 # Newest first. "text" accepts Markdown.
 
 - date: "Fall 2026"
-  text: "Happy to share our work on home robot memory at three CoRL 2026 workshops: Memory for Robot Foundation Models (RoboMem), Modeling Uncertainty in Robotic World Models, and Continually Self-Improving Robots!"
+  text: "Happy to share our [work on home robot memory](https://arxiv.org/abs/2611.29818) at three CoRL 2026 workshops: Memory for Robot Foundation Models (RoboMem), Modeling Uncertainty in Robotic World Models, and Continually Self-Improving Robots!"
 - date: "Sep 2026"
   text: "Started my M.S. in EE at UCLA, staying in NESL, where I'm now taking our robot memory work onto a Unitree Go2 quadruped. Also joined Prof. Abeer Alwan's speech lab (SPAPL) to work on Alzheimer's disease detection from speech."
 - date: "Summer 2026"

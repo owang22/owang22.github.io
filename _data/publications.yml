@@ -8,6 +8,11 @@
   badge: "CoRL-W"
   selected: true
   summary: "LLM-written memory summaries often forget what they learned when an old routine comes back. Keeping hypotheses about routines, backed by raw observations, makes predictions hold up better under these shifts."
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2611.29818"
+    - label: "code"
+      url: "https://github.com/nesl/memory-for-home-robots"
 
 - title: "Spectral Predictability as a Fast Reliability Indicator for Time Series Forecasting Model Selection"
   authors: "O. Wang, P. Quan, K. Yang, M. Srivastava"
